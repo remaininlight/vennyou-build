@@ -59,7 +59,7 @@ module.exports = function(grunt) {
           //{expand: true, src: ['path/*'], dest: 'dest/', filter: 'isFile'}, // includes files in path
           //{expand: true, src: ['test_file'], dest: 'test_file_2', filter: 'isFile'},
           //{expand: true, src: ['../vennyou-website/nginx.conf'], dest: '../../vennyou-app/nginx.conf', filter: 'isFile'},
-          {expand: true, cwd: '../vennyou-website/pages/', src: ['static/*'], dest: '../vennyou-app/'}, // makes all src relative to cwd
+          //{expand: true, cwd: '../vennyou-website/pages/', src: ['static/*'], dest: '../vennyou-app/'},
           //{expand: true, src: ['path/**'], dest: 'dest/'}, // includes files in path and its subdirs
           //{expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'}, // makes all src relative to cwd
           //{expand: true, flatten: true, src: ['path/**'], dest: 'dest/', filter: 'isFile'} // flattens results to a single level
@@ -85,5 +85,6 @@ module.exports = function(grunt) {
   // By default, lint and run all tests.
   //grunt.registerTask('default', ['jshint', 'test']);
   grunt.registerTask('default', ['vennyou_build', 'copy']);
+  grunt.registerTask('test', ['vennyou_build', 'copy']);
 
 };

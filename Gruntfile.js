@@ -1,5 +1,4 @@
-/
- * vennyou_build
+/* vennyou_build
  * https://github.com/user/build
  *
  * Copyright (c) 2013 Mark Claydon

@@ -2,7 +2,7 @@
 
 echo "Git add, commit, push"
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+$DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 echo DIR 
 
 #git add -A
